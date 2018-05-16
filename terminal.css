@@ -13,7 +13,6 @@ body{
 
 .terminal-border{
 
-	position: relative;
 	height: 480px;
 	width: 960px;
 	margin : auto;
@@ -23,7 +22,7 @@ body{
 	border-top-right-radius:  15px;
 	border-top-left-radius: 15px;
 	display: grid;
-	grid-template-rows: 1fr 12fr;
+	grid-template-rows: 1fr 11fr 1fr;
 }
 
 
@@ -71,4 +70,42 @@ body{
   margin-left: 15px;
   
 
+}
+
+
+.terminal-content{
+
+	padding: 16px;
+	display: grid;
+	grid-template-rows: 1fr; /*FOr pre to fill entire space*/
+
+}
+
+
+.terminal-command-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	border-top: 1px solid 
+}
+
+
+
+
+.terminal-command-input{
+
+	background: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	
+	text-indent: 16px;
+}
+
+
+
+.pre{
+	height: inherit;
+	width: inherit;
 }
