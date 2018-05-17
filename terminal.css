@@ -78,7 +78,7 @@ body{
 	padding: 16px;
 	display: grid;
 	grid-template-rows: 1fr; /*FOr pre to fill entire space*/
-
+	overflow-y: auto;
 }
 
 
@@ -109,3 +109,42 @@ body{
 	height: inherit;
 	width: inherit;
 }
+
+
+/*This section is for the scrollbar*/
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+  }
+  ::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: #1f4b18;
+	border: 0px none #ffffff;
+	border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: #36882b;
+  }
+  ::-webkit-scrollbar-thumb:active {
+	background: #3f9b31;
+  }
+  ::-webkit-scrollbar-track {
+	background: #000000;
+	border: 0px none #ffffff;
+	border-radius: 0px;
+  }
+  ::-webkit-scrollbar-track:hover {
+	background: #000000;
+  }
+  ::-webkit-scrollbar-track:active {
+	background: #000000;
+  }
+  ::-webkit-scrollbar-corner {
+	background: transparent;
+  }
+  
+/*This is the end of scrollbar section*/
