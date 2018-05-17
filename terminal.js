@@ -38,12 +38,32 @@ inputCommandArea.addEventListener("focus",function(event){
 
             //Deal with the command input here after pressing enter
             inputCommand = inputCommandArea.value;
+            console.log("Input Command is " + inputCommand);
+            
+            if(inputCommand != 'clear')
+             //content display go to next line
+            contentDisplayArea.innerHTML+=inputCommand;
+
+
+            //Deal with the commands here
+            switch(inputCommand){
+                case 'clear':
+                    existingCommands[0]();
+                    break;
+                case 'whoami':
+                    existingCommands[1]();
+                    break;
+                case 'lovewho':
+                    existingCommands[2]();
+                    break;
+                default:
+                    contentDisplayArea.innerHTML+= " : - command not found\n";
+                    break;
+            }
 
             // reset the input command text area
             inputCommandArea.value="";
 
-            //content display go to next line
-            contentDisplayArea.innerHTML+=inputCommand+"\n";
 
             //Make sure the scrollbar move as overflow of div occurs
             commandContainer.scrollTop = commandContainer.scrollHeight;
@@ -53,3 +73,22 @@ inputCommandArea.addEventListener("focus",function(event){
 
     });
 });
+
+
+/* Existing commands */
+//To add commands: 
+//  1.  add to this array
+//  2.  add to switch case in eventlistener of keypress at keycode = 13 (ENTER)
+
+var existingCommands = [
+    function(){         //clear
+        contentDisplayArea.innerHTML="";
+    },
+    function(){     //whoami
+        contentDisplayArea.innerHTML+=" : Guest\n";
+    },
+    function(){   //lovewho
+        contentDisplayArea.innerHTML+= ": Li Wen La...DUHH\n";
+    }
+
+    ];
