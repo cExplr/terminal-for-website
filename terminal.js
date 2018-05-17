@@ -53,9 +53,6 @@ inputCommandArea.addEventListener("focus",function(event){
                 case 'whoami':
                     existingCommands[1]();
                     break;
-                case 'lovewho':
-                    existingCommands[2]();
-                    break;
                 default:
                     contentDisplayArea.innerHTML+= " : - command not found\n";
                     break;
@@ -86,9 +83,5 @@ var existingCommands = [
     },
     function(){     //whoami
         contentDisplayArea.innerHTML+=" : Guest\n";
-    },
-    function(){   //lovewho
-        contentDisplayArea.innerHTML+= ": Li Wen La...DUHH\n";
     }
-
-    ];
+];
