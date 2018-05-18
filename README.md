@@ -19,4 +19,8 @@ To add new custom commands,
 
 ---
 
+You can see this  in work at my [https://codepen.io/cExplr/pen/jxeJwN](https://codepen.io/cExplr/pen/jxeJwN)
 
+and you can see a how it was used in the bigger project without images of logo and background at [https://codepen.io/cExplr/pen/pVQBXW](https://codepen.io/cExplr/pen/pVQBXW)
+
+---
